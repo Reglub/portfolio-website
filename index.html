@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name – Game Design & Programming Portfolio</title>
+<meta name="description" content="Game design and programming portfolio of Your Name.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== SIDEBAR ===================== -->
+<aside class="sidebar">
+  <a class="brand" href="index.html">
+    <h1>Your Name</h1>
+    <p>Game designer & programmer</p>
+  </a>
+  <ul class="nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a class="resume" href="resume.pdf">Résumé</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="socials">
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+    <a href="https://itch.io/">itch.io</a>
+    <a href="https://github.com/">GitHub</a>
+  </div>
+</aside>
+
+<main>
+
+  <!-- ===================== VIDEO ===================== -->
+  <div class="showreel">
+    <div class="placeholder">Put your video in the videos folder as showreel.mp4</div>
+    <!-- Option A: your own video file (plays automatically, muted, on a loop) -->
+    <video src="videos/showreel.mp4" poster="images/showreel-poster.jpg"
+           autoplay muted loop playsinline controls></video>
+
+    <!-- Option B: a YouTube video instead. Delete the <video> line above and use this.
+         Replace VIDEO_ID with the code after "v=" in your YouTube link.
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID"
+            title="My game development showreel" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+    -->
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="about">
+    <div class="portrait">
+      <!-- Replace with: <img src="images/me.jpg" alt="Photo of Your Name"> -->
+      Your photo
+    </div>
+    <div class="about-text">
+      <h2>Hi, I'm Your Name.</h2>
+      <p>I'm a game designer and programmer from Toronto. I like building the systems that make games feel good to play: movement, combat, AI, and the tools that help a team ship.</p>
+      <p>Below are projects I've worked on with teams and on my own. Click any project to see how it was made, what I was responsible for, and what I learned.</p>
+      <ul class="skills">
+        <li>Unity</li><li>Unreal Engine</li><li>C#</li><li>C++</li><li>Game design</li><li>Level design</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p>Click a project to see the full breakdown.</p>
+    </div>
+    <div class="grid">
+
+      <!-- To add a project: copy one whole <a class="tile">…</a> block,
+           and make a matching page in the projects folder. -->
+      <a class="tile" href="projects/project-one.html">
+        <div class="shot">Screenshot</div>
+        <div class="body">
+          <ul class="tags"><li>unreal</li><li>c++</li><li>team of 8</li></ul>
+          <h3>Project One</h3>
+          <p>A 3D action platformer made over 8 weeks.</p>
+          <p class="role">Gameplay programmer</p>
+          <ul class="did">
+            <li>Player state machine</li>
+            <li>Third-person camera</li>
+            <li>Enemy AI with behaviour trees</li>
+          </ul>
+          <span class="view">View project</span>
+        </div>
+      </a>
+
+      <a class="tile" href="projects/project-two.html">
+        <div class="shot">Screenshot</div>
+        <div class="body">
+          <ul class="tags"><li>unity</li><li>c#</li><li>university</li></ul>
+          <h3>Project Two</h3>
+          <p>A co-op puzzle game for two players.</p>
+          <p class="role">Designer and programmer</p>
+          <ul class="did">
+            <li>Puzzle and level design</li>
+            <li>Networked co-op</li>
+            <li>Playtesting and iteration</li>
+          </ul>
+          <span class="view">View project</span>
+        </div>
+      </a>
+
+      <a class="tile" href="projects/project-three.html">
+        <div class="shot">Screenshot</div>
+        <div class="body">
+          <ul class="tags"><li>game jam</li><li>godot</li></ul>
+          <h3>Project Three</h3>
+          <p>Made in 48 hours for a game jam.</p>
+          <p class="role">Solo developer</p>
+          <ul class="did">
+            <li>All design and code</li>
+            <li>Placed in the top 10% for fun</li>
+          </ul>
+          <span class="view">View project</span>
+        </div>
+      </a>
+
+      <a class="tile" href="projects/project-four.html">
+        <div class="shot">Screenshot</div>
+        <div class="body">
+          <ul class="tags"><li>c++</li><li>opengl</li><li>engine</li></ul>
+          <h3>Project Four</h3>
+          <p>A small 2D engine written from scratch.</p>
+          <p class="role">Solo developer</p>
+          <ul class="did">
+            <li>Sprite batching renderer</li>
+            <li>Entity component system</li>
+          </ul>
+          <span class="view">View project</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="contact">
+      <h2>Get in touch</h2>
+      <a class="email" href="mailto:you@example.com">you@example.com</a>
+      <p>I'm open to junior game design and programming roles. Send me an email, or find me here:</p>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://itch.io/">itch.io</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>© 2026 Your Name</footer>
+
+</main>
+</body>
+</html>
